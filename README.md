@@ -1,4 +1,6 @@
-[参考](https://zenn.dev/magurotuna/articles/bab4db5999ebfa#proc-macro-workshop-%E3%81%AE%E7%B4%B9%E4%BB%8B)
+<a href='https://zenn.dev/magurotuna/articles/bab4db5999ebfa#proc-macro-workshop-%E3%81%AE%E7%B4%B9%E4%BB%8B' target='_blank' rel='noreferrer'>
+参考URL
+</a>
 
 
 # Rust Latam: procedural macros workshop
