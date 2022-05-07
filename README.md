@@ -1,3 +1,6 @@
+[参考](https://zenn.dev/magurotuna/articles/bab4db5999ebfa#proc-macro-workshop-%E3%81%AE%E7%B4%B9%E4%BB%8B)
+
+
 # Rust Latam: procedural macros workshop
 
 *This repo contains a selection of projects designed to learn to write Rust
@@ -12,14 +15,20 @@ by other authors.*
 
 ## Contents
 
-- [**Suggested prerequisites**](#suggested-prerequisites)
-- [**Projects**](#projects) — Introduction to each of the projects
-  - [**Derive macro:** `derive(Builder)`](#derive-macro-derivebuilder)
-  - [**Derive macro:** `derive(CustomDebug)`](#derive-macro-derivecustomdebug)
-  - [**Function-like macro:** `seq!`](#function-like-macro-seq)
-  - [**Attribute macro:** `#[sorted]`](#attribute-macro-sorted)
-  - [**Attribute macro:** `#[bitfield]`](#attribute-macro-bitfield)
-  - [**Project recommendations**](#project-recommendations) — What to work on
+- [Rust Latam: procedural macros workshop](#rust-latam-procedural-macros-workshop)
+  - [Contents](#contents)
+  - [Suggested prerequisites](#suggested-prerequisites)
+  - [Projects](#projects)
+    - [Derive macro: `derive(Builder)`](#derive-macro-derivebuilder)
+    - [Derive macro: `derive(CustomDebug)`](#derive-macro-derivecustomdebug)
+    - [Function-like macro: `seq!`](#function-like-macro-seq)
+    - [Attribute macro: `#[sorted]`](#attribute-macro-sorted)
+    - [Attribute macro: `#[bitfield]`](#attribute-macro-bitfield)
+    - [Project recommendations](#project-recommendations)
+  - [Test harness](#test-harness)
+  - [Workflow](#workflow)
+  - [Debugging tips](#debugging-tips)
+    - [License](#license)
     depending on your interests
 - [**Test harness**](#test-harness) — Explanation of how testing is set up
 - [**Workflow**](#workflow) — Recommended way to work through the workshop
