@@ -12,7 +12,7 @@ pub fn derive(input: TokenStream) -> TokenStream {
     // eprintln!("{:?}", &name.span());
 
     let expanded = quote! {
-        pub struct #bident {
+        struct #bident {
             executable: Option<String>,
             args: Option<Vec<String>>,
             env: Option<Vec<String>>,
@@ -20,23 +20,23 @@ pub fn derive(input: TokenStream) -> TokenStream {
         }
 
         impl #bident {
-            pub fn executable(&mut self, executable: String) -> &mut Self {
+            fn executable(&mut self, executable: String) -> &mut Self {
                 self.executable = Some(executable);
                 self
             }
-            pub fn args(&mut self, args: Vec<String>) -> &mut Self {
+            fn args(&mut self, args: Vec<String>) -> &mut Self {
                 self.args = Some(args);
                 self
             }
-            pub fn env(&mut self, env: Vec<String>) -> &mut Self {
+            fn env(&mut self, env: Vec<String>) -> &mut Self {
                 self.env = Some(env);
                 self
             }
-            pub fn current_dir(&mut self, current_dir: String) -> &mut Self {
+            fn current_dir(&mut self, current_dir: String) -> &mut Self {
                 self.current_dir = Some(current_dir);
                 self
             }
-            pub fn build(&mut self) -> Result<#name, Box<dyn std::error::Error>> {
+            fn build(&mut self) -> Result<#name, Box<dyn std::error::Error>> {
                 if self.executable.is_none() {
                     return Err("executable is not set".into())
                 }
